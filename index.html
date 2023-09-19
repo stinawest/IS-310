@@ -105,17 +105,18 @@
           color: blue;
         }
 
-        .sketchy {
+        .sketchy1 {
           -webkit-flex: 1;
           -ms-flex: 1;
           flex: 1;
           padding: 3vh;
-          margin: 10vh;
-          margin-bottom: 5vh;
+          margin: 5vh;
+          margin-left: 20vh;
           border: 3px solid #333333;
           border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-          background: #ffffff;
+          background: #ebf7f3;
           position: relative;
+          
     
         &::before {
           content: '';
@@ -131,7 +132,31 @@
         }
         }
 
-      
+        .sketchy2 {
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          padding: 3vh;
+          margin: 5vh;
+          margin-right: 20vh;
+          border: 3px solid #333333;
+          border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+          background: #ebf7f3;
+          position: relative;
+
+          &::before {
+          content: '';
+          border: 2px solid #353535;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+          border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+        }
+        }
         
         /* responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media (max-width: 600px) {
@@ -150,27 +175,15 @@
     </div>
 
     <div class="row">
-        <div class="box" style="margin-left: 30vh;">
-          <h4>Om oss</h4>
-            <p>Gruppe 18 består av seks medlemmer som alle er i 20-årene, som har lite tidligere erfaring innen IT og informasjonssystemer, men som er dedikerte, kreative og alltid villig til å lære.
-            Flere av oss har samarbeidet i grupper i tidligere semestre. Dette gir oss en fordel ved at vi allerede kjenner hverandres styrker og interesser. Våre varierte interesser og individuelle styrker skaper mulighet for gjensidig læring. Dette gir oss muligheten til å utforske nye perspektiver og tilnærminger.</p>
-        </div>
-        <div class="box" style="margin-right: 30vh;">
-          <h4>Hva ser vi etter?</h4>
-            <p>Gruppen ønsker et prosjekt som går gjennom noen tekniske deler og noen kreative deler, siden medlemmene er interessert i begge deler. Gruppen vil gjerne jobbe med en bedrift som har prosjekter som kan utfordre oss på både det kreative og tekniske. På grunn av at gruppen er på seks personer og har ulike interesser, ønsker gruppen et prosjekt som er mer omfattende. I tillegg er det viktig for oss at bedriften verdsetter en god kundeopplevelse, hvor prosjektene kan være nyttig for kunden. Gruppen ønsker også fokus på bærekraft og universelt design. Ambisjoner som gruppen har er å lære så mye som mulig fra bedriften samtidig som å støtte dem. Vi ønsker å få relevant jobberfaring og kunnskap, i tillegg til å se hvilke jobbmuligheter som finnes. </p>
-        </div>
-    </div>
-
-    <div class="row">
-    <div class="sketchy">
-      <h4>Om oss</h4>
+      <div class="sketchy1">
+        <h4>Om oss</h4>
           <p>Gruppe 18 består av seks medlemmer som alle er i 20-årene, som har lite tidligere erfaring innen IT og informasjonssystemer, men som er dedikerte, kreative og alltid villig til å lære.
           Flere av oss har samarbeidet i grupper i tidligere semestre. Dette gir oss en fordel ved at vi allerede kjenner hverandres styrker og interesser. Våre varierte interesser og individuelle styrker skaper mulighet for gjensidig læring. Dette gir oss muligheten til å utforske nye perspektiver og tilnærminger.</p>
-    </div> 
-    <div class="sketchy">
-      <h4>Hva ser vi etter?</h4>
-            <p>Gruppen ønsker et prosjekt som går gjennom noen tekniske deler og noen kreative deler, siden medlemmene er interessert i begge deler. Gruppen vil gjerne jobbe med en bedrift som har prosjekter som kan utfordre oss på både det kreative og tekniske. På grunn av at gruppen er på seks personer og har ulike interesser, ønsker gruppen et prosjekt som er mer omfattende. I tillegg er det viktig for oss at bedriften verdsetter en god kundeopplevelse, hvor prosjektene kan være nyttig for kunden. Gruppen ønsker også fokus på bærekraft og universelt design. Ambisjoner som gruppen har er å lære så mye som mulig fra bedriften samtidig som å støtte dem. Vi ønsker å få relevant jobberfaring og kunnskap, i tillegg til å se hvilke jobbmuligheter som finnes. </p>
-    </div>
+      </div> 
+      <div class="sketchy2">
+        <h4>Hva ser vi etter?</h4>
+          <p>Gruppen ønsker et prosjekt som går gjennom noen tekniske deler og noen kreative deler, siden medlemmene er interessert i begge deler. Gruppen vil gjerne jobbe med en bedrift som har prosjekter som kan utfordre oss på både det kreative og tekniske. På grunn av at gruppen er på seks personer og har ulike interesser, ønsker gruppen et prosjekt som er mer omfattende. I tillegg er det viktig for oss at bedriften verdsetter en god kundeopplevelse, hvor prosjektene kan være nyttig for kunden. Gruppen ønsker også fokus på bærekraft og universelt design. Ambisjoner som gruppen har er å lære så mye som mulig fra bedriften samtidig som å støtte dem. Vi ønsker å få relevant jobberfaring og kunnskap, i tillegg til å se hvilke jobbmuligheter som finnes. </p>
+      </div>
     </div>
 
         
