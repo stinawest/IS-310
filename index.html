@@ -12,17 +12,37 @@
         body {
           font-family: Arial, Helvetica, sans-serif;
           background-color: #ebf7f3;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          margin-top: 60px;
         }
         
-        /* style the header */
         .header {
-          padding-left: 60vh;
-          padding-right: 60vh;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          width: 100%;
+          margin: 0;
+          height: 60px;
+          background-color: rgb(173, 206, 255);
+          border-bottom: 1px solid rgb(134, 182, 255);
+          position: absolute;
+          top: 0;
+        }
+
+        .header #headitem {
           text-align: center;
-          border-radius: 8px;
-          
+          float: left;
+          margin-left: 20px;
+          padding: 0;
+          font-size: 19px;
+          font-weight: 530;
+        }
+
+        .header #headitem1 {
+          text-align: center;
+          float: right;
+          margin-right: 40px;
+          font-size: 19px;
+          font-weight: 530;
         }
         
         /* container for flexboxes */
@@ -95,17 +115,14 @@
     </style>
 </head>
 <body>
-    <div class="row">
-        <div class="box" style="margin-left: 30vh;">
-        </div>
-        <div class="box" style="margin-right: 80vh;">
-          <h1>IS-310 Prosjektgjennomføring</h1>
-        </div>
+    <div class="header"> 
+      <p id="headitem">IS-310 Prosjektgjennomføring</p>
+      <p id="headitem1">Gruppe 18</p>
     </div>
 
     <div class="row">
         <div class="box" style="margin-left: 30vh;">
-          <h4>Vi er gruppe 18!</h4>
+          <h4>Om oss</h4>
             <p>Gruppe 18 består av seks medlemmer som alle er i 20-årene, som har lite tidligere erfaring innen IT og informasjonssystemer, men som er dedikerte, kreative og alltid villig til å lære.
             Flere av oss har samarbeidet i grupper i tidligere semestre. Dette gir oss en fordel ved at vi allerede kjenner hverandres styrker og interesser. Våre varierte interesser og individuelle styrker skaper mulighet for gjensidig læring. Dette gir oss muligheten til å utforske nye perspektiver og tilnærminger.</p>
         </div>
@@ -113,10 +130,6 @@
           <h4>Hva ser vi etter?</h4>
             <p>Gruppen ønsker et prosjekt som går gjennom noen tekniske deler og noen kreative deler, siden medlemmene er interessert i begge deler. Gruppen vil gjerne jobbe med en bedrift som har prosjekter som kan utfordre oss på både det kreative og tekniske. På grunn av at gruppen er på seks personer og har ulike interesser, ønsker gruppen et prosjekt som er mer omfattende. I tillegg er det viktig for oss at bedriften verdsetter en god kundeopplevelse, hvor prosjektene kan være nyttig for kunden. Gruppen ønsker også fokus på bærekraft og universelt design. Ambisjoner som gruppen har er å lære så mye som mulig fra bedriften samtidig som å støtte dem. Vi ønsker å få relevant jobberfaring og kunnskap, i tillegg til å se hvilke jobbmuligheter som finnes. </p>
         </div>
-    </div>
-
-    <div class="header" style="font-size: 25px;">
-        <h3>Om oss</h3>
     </div>
         
     <div class="row">
@@ -127,13 +140,13 @@
           <a class="link" href="https://www.linkedin.com/in/stina-westermann-b4850b220/"><img class="logo" src="/images/linked.png"></a>
         </div>
         <div class="column" style="background-color:#eee;">
-          <div class="image"><img src="/images/katt.jpg" alt=""></div>
-          <h4>Navn</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="link" href="https://www.linkedin.com/"><img class="logo" src="/images/linked.png"></a>
+          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/renate.png?raw=true" alt=""></div>
+          <h4>Renate</h4>
+          <p>Jeg er 27 år og studerer IT og informasjonssystemer ved UiA. Interessert i de tekniske apspekene innen IT og IS: koding, jobbing med databaser og lignende, med fokus på bærekraft, etikk, brukervennlighet og universelt design.</p>
+          <a class="link" href="https://www.linkedin.com/">LinkedIn</a>
         </div>
         <div class="column" style="background-color:#eee; margin-right: 20vh;">
-          <div class="image"><img src="/images/katt.jpg" alt=""></div>
+          <div class="image"><img src="" alt=""></div>
           <h4>Navn</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a class="link" href="https://www.linkedin.com/"><img class="logo" src="/images/linked.png"></a>
@@ -148,7 +161,7 @@
           <a class="link" href="https://www.linkedin.com/"><img class="logo" src="/images/linked.png"></a>
         </div>
         <div class="column" style="background-color:#eee;">
-          <div class="image"><img src="/images/katt.jpg" alt=""></div>
+          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/katt.jpg?raw=true" alt=""></div>
           <h4>Navn</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a class="link" href="https://www.linkedin.com/"><img class="logo" src="/images/linked.png"></a>
