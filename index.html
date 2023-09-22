@@ -60,8 +60,36 @@
           flex: 1;
           padding: 3vh;
           border-radius: 8px;
-          box-shadow:10px 10px 10px 5px rgb(217, 217, 217);
+          background-color: #f8faf6;
+          box-shadow:5px 5px 5px 2px #667462;
           margin: 3vh; 
+        }
+
+        .column h4 {
+          float: left;
+          padding: 0;
+          margin: 0;
+          margin-top: 5px;
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        .column a {
+          float: right;
+          padding: 0;
+          margin-top: 7px;
+        }
+
+        .column p {
+          padding: 0;
+          margin-top: 40px;
+        }
+
+        .logo {
+          border-radius: 0%;
+          height: 20px;
+          width: 20px;
+          padding: 0;
         }
 
         .box {
@@ -85,20 +113,6 @@
           align-items: center;
         }
 
-        .logo {
-          border-radius: 0%;
-          max-width: 5vh;
-        }
-
-        h4 {
-          font-size: 20px;
-        }
-
-        .link {
-          text-decoration: none;
-          color: blue;
-        }
-
         .sketchy1 {
           -webkit-flex: 1;
           -ms-flex: 1;
@@ -108,11 +122,37 @@
           margin-left: 20vh;
           border: 3px solid #84A98C;
           border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-          background: #f8fcf6;
+          background: #f2f5f0;
           position: relative;
           
     
         &::before {
+          content: '';
+          border: 2px solid #96c09f;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+          border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+        }
+        }
+
+        .sketchy2 {
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          padding: 3vh;
+          margin: 5vh;
+          margin-right: 20vh;
+          border: 3px solid #84A98C;
+          border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+          background: #f2f5f0;
+          position: relative;
+
+          &::before {
           content: '';
           border: 2px solid #96c09f;
           display: flex;
@@ -137,34 +177,7 @@
           margin-bottom: 5px;
           color: #1d251f;
         }
-
-        .sketchy2 {
-          -webkit-flex: 1;
-          -ms-flex: 1;
-          flex: 1;
-          padding: 3vh;
-          margin: 5vh;
-          margin-right: 20vh;
-          border: 3px solid #84A98C;
-          border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-          background: #f8fcf6;
-          position: relative;
-
-          &::before {
-          content: '';
-          border: 2px solid #96c09f;
-          display: flex;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-          border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-        }
-        }
         
-        /* responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media (max-width: 600px) {
           .row {
             -webkit-flex-direction: column;
@@ -194,43 +207,43 @@
         
     <div class="row">
         <div class="column" style="background-color:#eee; margin-left: 20vh;">
-          <div class="image"><img src="/images/mæ.jpg" alt=""></div>
-          <h4>Stina</h4>
+          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/m%C3%A6.jpg?raw=true" alt=""></div>
+            <h4>Stina</h4>
+            <a class="link" href="https://www.linkedin.com/in/stina-westermann-b4850b220/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
           <p>Jeg er 22 år gammel og studerer IT og informasjonssystemer ved UiA. Jeg går mitt siste år av en bachelor. IT og informasjonssystemer er interessant for meg fordi jeg vil utforske mulighetene innen å bruke IT i sammenheng med helse, og å hjelpe folk. Jeg er også interessert i å skape designløsninger. Gjennom bacheloren har vi fått mulighet til å lære mer om IT i forhold til bedrifter, bærekraft og samfunnet. Jeg har også fått litt kompetanse på tekniske aspekter av IT som koding. Jeg ønsker i arbeidslivet å jobbe i et team, hvor vi kan dele ideer og lære av hverandre.</p>
-          <a class="link" href="https://www.linkedin.com/in/stina-westermann-b4850b220/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
         </div>
         <div class="column" style="background-color:#eee;">
           <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/renate.png?raw=true" alt=""></div>
           <h4>Renate</h4>
+          <a class="link" href="https://www.linkedin.com/in/renate-westermann-65aa0228a"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
           <p>Jeg er 27 år og studerer IT og informasjonssystemer ved UiA. Interessert i de tekniske apspekene innen IT og IS: koding, jobbing med databaser og lignende, med fokus på bærekraft, etikk, brukervennlighet og universelt design.</p>
-          <a class="link" href="https://www.linkedin.com/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
         </div>
         <div class="column" style="background-color:#eee; margin-right: 20vh;">
-          <div class="image"><img src="" alt=""></div>
+          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/katt.jpg?raw=true" alt=""></div>
           <h4>Navn</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a class="link" href="https://www.linkedin.com/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
         <br>
     <div class="row">
         <div class="column" style="background-color:#eee; margin-left: 20vh;">
-          <div class="image"><img src="/images/katt.jpg" alt=""></div>
+          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/katt.jpg?raw=true" alt=""></div>
           <h4>Navn</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a class="link" href="https://www.linkedin.com/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="column" style="background-color:#eee;">
           <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/katt.jpg?raw=true" alt=""></div>
           <h4>Navn</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a class="link" href="https://www.linkedin.com/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="column" style="background-color:#eee; margin-right: 20vh;">
-          <div class="image"><img src="/images/katt.jpg" alt=""></div>
+          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/katt.jpg?raw=true" alt=""></div>
           <h4>Navn</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a class="link" href="https://www.linkedin.com/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
 </body>
