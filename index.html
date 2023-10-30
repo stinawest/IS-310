@@ -3,247 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-          background-color: #CAD2C5;
-          height: 100%;
-          margin: 0;
-          margin-top: 60px;
-        }
-        
-        .header {
-          width: 100%;
-          margin: 0;
-          height: 60px;
-          background-color: #84A98C;
-          border-bottom: 2px solid #64836a;
-          position: absolute;
-          top: 0;
-        }
-
-        .header #headitem {
-          text-align: center;
-          float: left;
-          margin-left: 20px;
-          padding: 0;
-          font-size: 19px;
-          font-weight: 540;
-          color: #151b17;
-        }
-
-        .header #headitem1 {
-          text-align: center;
-          float: right;
-          margin-right: 40px;
-          font-size: 19px;
-          font-weight: 540;
-          color: #151b17;
-        }
-        
-        /* container for flexboxes */
-        .row {
-          display: -webkit-flex;
-          display: flex;
-          margin-right: 90px;
-          margin-left: 90px;
-        }
-        
-        /* create three equal columns that sits next to each other */
-        .column {
-          -webkit-flex: 1;
-          -ms-flex: 1;
-          flex: 1;
-          padding: 3vh;
-          border-radius: 8px;
-          background-color: #f2f5f0;
-          box-shadow:5px 5px 5px 2px #667462;
-          margin: 20px; 
-        }
-
-        .column h4 {
-          float: left;
-          padding: 0;
-          margin: 0;
-          margin-top: 5px;
-          font-size: 20px;
-          font-weight: 600;
-        }
-
-        .column a {
-          float: right;
-          padding: 0;
-          margin-top: 7px;
-        }
-
-        .column p {
-          padding: 0;
-          margin-top: 40px;
-        }
-
-        .logo {
-          border-radius: 0%;
-          height: 20px;
-          width: 20px;
-          padding: 0;
-        }
-        
-        img {
-          width: 25vh;
-          height: 25vh;
-          border-radius: 50%;
-          object-fit: cover;
-          image-rendering: optimizeQuality;
-        }
-
-        .image {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .sketchy1 {
-          -webkit-flex: 1;
-          -ms-flex: 1;
-          flex: 1;
-          padding: 3vh;
-          margin: 4vh;
-          margin-top: 7vh;
-          border: 3px solid #64836a;
-          border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-          background: #f2f5f0;
-          position: relative;
-          
-    
-        &::before {
-          content: '';
-          border: 2px solid #84A98C;
-          display: flex;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-          border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-        }
-        }
-
-        .sketchy2 {
-          -webkit-flex: 1;
-          -ms-flex: 1;
-          flex: 1;
-          padding: 3vh;
-          margin: 4vh;
-          margin-top: 7vh;
-          border: 3px solid #64836a;
-          border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-          background: #f2f5f0;
-          position: relative;
-
-          &::before {
-          content: '';
-          border: 2px solid #84A98C;
-          display: flex;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-          border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-        }
-        }
-
-        .sketchy1 h4 {
-          margin-top: 0;
-          margin-bottom: 5px;
-          color: #1d251f;
-        }
-
-        .sketchy2 h4 {
-          margin-top: 0;
-          margin-bottom: 5px;
-          color: #1d251f;
-        }
-        
-        @media (max-width: 600px) {
-          .row {
-            -webkit-flex-direction: column;
-            flex-direction: column;
-          }
-        }
-        
-    </style>
+    <title>Gruppe 18</title>
+    <!--flyttet til css.fil-->
+    <link rel = "stylesheet" type = "text/css" href = "stylesheet.css ">
 </head>
+
+
 <body>
+<!-- dette er for for header-->
     <div class="header"> 
       <p id="headitem">IS-310 Prosjektgjennomføring</p>
-      <a href="https://stinawest.github.io/IS-310/video"><p id="headitem1">Gruppe 18</p></a>
+     <!-- <a href="https://stinawest.github.io/IS-310/video">--><p id="headitem1">Gruppe 18</p></a>
+        <nav>
+          <a href = "https://stinawest.github.io/IS-310/video">Video introduksjon</a>
+
+        </nav>
     </div>
 
-    <div class="row">
-      <div class="sketchy1">
-        <h4>Om oss</h4>
-          <p>Gruppe 18 består av seks medlemmer som alle er i 20-årene, som har lite tidligere erfaring innen IT og informasjonssystemer, men som er dedikerte, kreative og alltid villig til å lære.
-          Flere av oss har samarbeidet i grupper i tidligere semestre. Dette gir oss en fordel ved at vi allerede kjenner hverandres styrker og interesser. Våre varierte interesser og individuelle styrker skaper mulighet for gjensidig læring. Dette gir oss muligheten til å utforske nye perspektiver og tilnærminger.</p>
-      </div> 
-      <div class="sketchy2">
-        <h4>Hva ser vi etter?</h4>
-          <p>På grunn av at gruppen er på seks personer og har ulike interesser, ønsker gruppen et prosjekt som er mer omfattende. I tillegg er det viktig for oss at bedriften verdsetter en god kundeopplevelse, hvor prosjektene kan være nyttig for kunden. Ambisjoner som gruppen har er å lære så mye som mulig fra bedriften samtidig som å støtte dem. Vi ønsker å få relevant jobberfaring og kunnskap, i tillegg til å se hvilke jobbmuligheter som finnes. </p>
+    <div class = "banner">
+      <div class = "banner-tekst">
+        <p>Hei! Velkommen til oss</p>
+        <h1>Gruppe 18</h1>
       </div>
-    </div>
-        
-    <div class="row">
-        <div class="column">
-          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/m%C3%A6.jpg?raw=true" alt=""></div>
-            <h4>Stina</h4>
-            <a class="link" href="https://www.linkedin.com/in/stina-westermann-b4850b220/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
-          <p>Jeg er 22 år gammel og studerer IT og informasjonssystemer ved UiA. Jeg går mitt siste år av en bachelor. IT og informasjonssystemer er interessant for meg fordi jeg vil utforske mulighetene innen å bruke IT i sammenheng med helse, og å hjelpe folk. Jeg er også interessert i å skape designløsninger.</p>
-        </div>
-        <div class="column">
-          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/renate.png?raw=true" alt=""></div>
-          <h4>Renate</h4>
-          <a class="link" href="https://www.linkedin.com/in/renate-westermann-65aa0228a"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
-          <p>Jeg er 27 år og studerer IT og informasjonssystemer ved UiA. Interessert i de tekniske apspekene innen IT og IS: koding, jobbing med databaser og lignende, med fokus på bærekraft, etikk, brukervennlighet og universelt design.</p>
-        </div>
-        <div class="column">
-          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/isabel.jpg?raw=true" alt=""></div>
-          <h4>Isabel</h4>
-          <a class="link" href="https://www.linkedin.com/in/isabel-lie/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
-          <p>Jeg heter Isabel og er 25 år gammel og kommer fra Ski. I tillegg til å studere IT og informasjonssystemer ved UiA, jobber jeg deltid som saksbehandler hos Posten & Bring. Tidligere har jeg jobbet som kunderådgiver i bankbransjen. Gjennom disse tidligere erfaringene har jeg lært viktigheten av å skape gode og funksjonelle løsninger som gir en positiv kundeopplevelse. Jeg har derfor en spesiell interesse for UI/UX design og universell utforming</p>
-        </div>
-    </div>
-        <br>
-    <div class="row">
-        <div class="column">
-          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/anders.jpg?raw=true" alt=""></div>
-          <h4>Anders</h4>
-          <a class="link" href="https://www.linkedin.com/in/anders-akselberg-tonheim-2a1149292/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
-          <p>Jeg er 25 år gammel, kommer fra Klepp og studerer IT og informasjonssystemer ved UiA. I tillegg til studiet jobber jeg som selger for Anton Sport. Jeg har en særlig interesse for prosjektgjennomføring i team, da jeg tror på kraften av samarbeid for å oppnå effektive resultater. Gjennom studiet har jeg fordypet meg i emner som samfunnsendringer og universell utforming, som har gitt meg et bredere perspektiv på hvordan teknologi kan tilpasses for å imøtekomme mangfoldet av behov i samfunnet.</p>
-        </div>
-        <div class="column">
-          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/Julie.jpg?raw=true" alt=""></div>
-          <h4>Julie</h4>
-          <a class="link" href="https://www.linkedin.com/in/julie-nyland-larsen/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
-          <p>Mitt navn er Julie, jeg er 22 år og kommer fra Kristiansand. Jeg har stor interesse for UX design/universell utforming og trives godt med å designe og teste intuitive og brukervennlige løsninger. Som en del av studiet har jeg for tiden praksis hos Bitmesh hvor jeg arbeider med web- og ux-design av deres eksisterende nettsider og IoT-plattform. Jeg er svært glad i å skape nye løsninger og holder på fritiden ofte på med kreative aktiviteter som grafisk design og tegning. Noen av mine sterke sider er at jeg er kreativ, strukturert og detaljorientert. 
+  </div>
 
-            Tidligere har jeg studert årsstudium i kommunikasjon og halvårsstudium i filosofi her på UiA.
-            </p>
+    <div class = "innhold">
+        <div class="row">
+          <div class="sketchy1">
+            <h4>Om oss</h4>
+              <p>Gruppe 18 består av seks medlemmer som alle er i 20-årene, som har lite tidligere erfaring innen IT og informasjonssystemer, men som er dedikerte, kreative og alltid villig til å lære.
+              Flere av oss har samarbeidet i grupper i tidligere semestre. Dette gir oss en fordel ved at vi allerede kjenner hverandres styrker og interesser. Våre varierte interesser og individuelle styrker skaper mulighet for gjensidig læring. Dette gir oss muligheten til å utforske nye perspektiver og tilnærminger.</p>
+          </div> 
+          <div class="sketchy2">
+            <h4>Hva ser vi etter?</h4>
+              <p>På grunn av at gruppen er på seks personer og har ulike interesser, ønsker gruppen et prosjekt som er mer omfattende. I tillegg er det viktig for oss at bedriften verdsetter en god kundeopplevelse, hvor prosjektene kan være nyttig for kunden. Ambisjoner som gruppen har er å lære så mye som mulig fra bedriften samtidig som å støtte dem. Vi ønsker å få relevant jobberfaring og kunnskap, i tillegg til å se hvilke jobbmuligheter som finnes. </p>
+          </div>
         </div>
-        <div class="column">
-          <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/princess.jpg?raw=true" alt=""></div>
-          <h4>Princess</h4>
-          <a class="link" href="https://www.linkedin.com/in/princess-psyra-sanchez-b84b75279/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
-          <p>Jeg er 23 år og kommer fra Oslo. Jeg er på mitt siste år innen for en bachelor i IT og informasjonssystemer og min interesse ligger i UX/UI design universell utforming. Jeg har mye av min erfaring som en helsefagarbeider hvor kommunikasjon, samarbeid, planlegging og kunden i sentrum er viktig for meg. 
-            Jeg vil bruke mine kunnskaper om teknologi for å bidra til å forbedre samfunnet og hjelpe befolkningen med brukervennlige løsninger. På fritiden jeg er glad i trening og matlaging, og liker være kreativ som maling, tegning og mote</p>
+        <div class="row">
+          <div class ="sketchy3">
+            <h4>Gjennomførte valgfag</h4>
+            <p>Digitale platformer,
+            IoT,
+            Algoritmer,
+            Grunder-lab/entreprenørskap,
+            Universell utforming av informasjonssystemer,
+            PHP,
+            IT og samfunnsendringer, samfunnsfagligmetode,
+            Informasjonssystemsikkerhet,
+            Foundations of Sustainable Development </p>
+            
+          </div>
+
         </div>
-    </div>
+            <div class="row">
+              <div class="column">
+                <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/m%C3%A6.jpg?raw=true" alt=""></div>
+                  <h4>Stina</h4>
+                  <a class="link" href="https://www.linkedin.com/in/stina-westermann-b4850b220/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+                <p>Jeg er 22 år gammel og studerer IT og informasjonssystemer ved UiA. Jeg går mitt siste år av en bachelor. IT og informasjonssystemer er interessant for meg fordi jeg vil utforske mulighetene innen å bruke IT i sammenheng med helse, og å hjelpe folk. Jeg er også interessert i å skape designløsninger.</p>
+                <p>
+                  <b>Rolle:</b> Frontend utvikler
+                <br>
+                  <b>Interesser:</b> UX/UI design, digitalisering, universell utforming, frontend utvikling 
+                  
+                </p>
+              </div>
+
+              <div class="column">
+                <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/renate.png?raw=true" alt=""></div>
+                <h4>Renate</h4>
+                <a class="link" href="https://www.linkedin.com/in/renate-westermann-65aa0228a"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+                <p>Jeg er 27 år og studerer IT og informasjonssystemer ved UiA. Interessert i de tekniske apspekene innen IT og IS: koding, jobbing med databaser og lignende, med fokus på bærekraft, etikk, brukervennlighet og universelt design.</p>
+               
+                <p>
+                  <b>Rolle:</b> Backend utvikler
+                <br>
+                  <b>Interesser:</b> Programmering, databaser, bærekraft, IoT, algoritmer og informasjonssystemsikkerhet. 
+                </p>
+              </div>
+
+              <div class="column">
+                <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/isabel.jpg?raw=true" alt=""></div>
+                <h4>Isabel</h4>
+                <a class="link" href="https://www.linkedin.com/in/isabel-lie/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+                <p>Jeg heter Isabel og er 25 år gammel og kommer fra Ski. I tillegg til å studere IT og informasjonssystemer ved UiA, jobber jeg deltid som saksbehandler hos Posten & Bring. Tidligere har jeg jobbet som kunderådgiver i bankbransjen. Gjennom disse tidligere erfaringene har jeg lært viktigheten av å skape gode og funksjonelle løsninger som gir en positiv kundeopplevelse. Jeg har derfor en spesiell interesse for UI/UX design og universell utforming</p>
+                <p>
+                  <b>Rolle:</b> Frontend utvikler
+                <br>
+                  <b>Interesser:</b> Universell utforming, bærekraft, prosjektledelse, design 
+                </p>
+              </div>
+          </div>
+
+              <br>
+
+          <div class="row">
+              <div class="column">
+                <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/anders.jpg?raw=true" alt=""></div>
+                <h4>Anders</h4>
+                <a class="link" href="https://www.linkedin.com/in/anders-akselberg-tonheim-2a1149292/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+                <p>Jeg er 25 år gammel, kommer fra Klepp og studerer IT og informasjonssystemer ved UiA. I tillegg til studiet jobber jeg som selger for Anton Sport. Jeg har en særlig interesse for prosjektgjennomføring i team, da jeg tror på kraften av samarbeid for å oppnå effektive resultater. Gjennom studiet har jeg fordypet meg i emner som samfunnsendringer og universell utforming, som har gitt meg et bredere perspektiv på hvordan teknologi kan tilpasses for å imøtekomme mangfoldet av behov i samfunnet.</p>
+                <p>
+                  <b>Rolle:</b> Prosjektleder 
+                <br>
+                  <b>Interesser:</b> Prosjektledelse, analyse, design, brukervennlighet. 
+                </p>
+              </div>
+
+              <div class="column">
+                <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/Julie.jpg?raw=true" alt=""></div>
+                  <h4>Julie</h4>
+                  <a class="link" href="https://www.linkedin.com/in/julie-nyland-larsen/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+                  <p>Mitt navn er Julie, jeg er 22 år og kommer fra Kristiansand. Jeg har stor interesse for UX design/universell utforming og trives godt med å designe og teste intuitive og brukervennlige løsninger. Som en del av studiet har jeg for tiden praksis hos Bitmesh hvor jeg arbeider med web- og ux-design av deres eksisterende nettsider og IoT-plattform. Jeg er svært glad i å skape nye løsninger og holder på fritiden ofte på med kreative aktiviteter som grafisk design og tegning. Noen av mine sterke sider er at jeg er kreativ, strukturert og detaljorientert. 
+          
+                  Tidligere har jeg studert årsstudium i kommunikasjon og halvårsstudium i filosofi her på UiA.
+                  </p>
+                  <p>
+                    <b>Rolle:</b> UX/UI designer
+                  <br>
+                    <b>Interesser:</b> ux/ui design, tjenestedesign, frontend utvikling, digital formidling, analyse, digitalisering
+                  </p>
+              </div>
+
+              <div class="column">
+                <div class="image"><img src="https://github.com/stinawest/IS-310/blob/main/images/princess.jpg?raw=true" alt=""></div>
+                <h4>Princess</h4>
+                <a class="link" href="https://www.linkedin.com/in/princess-psyra-sanchez-b84b75279/"><img class="logo" src="https://github.com/stinawest/IS-310/blob/stina/images/linked.png?raw=true"></a>
+                 
+                <p>Jeg er 23 år og kommer fra Oslo. Jeg er på mitt siste år innen for en bachelor i IT og informasjonssystemer. Jeg har mye av min erfaring som en helsefagarbeider hvor kommunikasjon, samarbeid, planlegging og kunden i sentrum er viktig for meg. 
+                  Jeg vil bruke mine kunnskaper om teknologi for å bidra til å forbedre samfunnet og hjelpe befolkningen med brukervennlige løsninger. For dette prosjektet vil jeg forbedre meg innenfor backendutvikling.
+                  På fritiden jeg er glad i trening, gaming, matlaging og liker være kreativ som maling og tegning</p>
+                  <p>
+                    <b>Rolle:</b> Kvalitetsikrer - QA
+                  <br>
+                    <b>Interesser:</b> Prosjektgjennomføring, frontend utvikling, UX/UI, e-helse
+                  </p>
+              </div>
+          </div>
+      </div>
+  
+  
+ 
 </body>
 </html>
 
