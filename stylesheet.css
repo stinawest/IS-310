@@ -251,6 +251,8 @@
           .row {
             -webkit-flex-direction: column;
             flex-direction: column;
+           margin: 2px;
           }
+         
         }
        
